@@ -41,6 +41,16 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
+# Make errors better looking
+gem 'better_errors', '~> 2.5'
+
+# bulma css
+gem 'bulma-rails', '~> 0.7.2'
+
+# simple form
+gem 'simple_form', '~> 4.1'
+
+
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
@@ -48,6 +58,10 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  # Guard is a command line tool to easily handle events on file system modifications.
+  gem 'guard', '~> 2.15'
+  # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
 end
 
 group :test do
